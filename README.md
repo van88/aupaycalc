@@ -1,2 +1,2 @@
-# aupaycalc
+# paycalc
 Pay calculator for australians
