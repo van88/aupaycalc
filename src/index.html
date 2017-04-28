@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Paycalc</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div class="container">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+  </nav>
+  <div class="container">
+      <app-root>Loading...</app-root>
+    <div class="card mb-3">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <form>
+          <div class="row">
+          <div class="col-md-8">
+            <div class="form-group row">
+              <label for="salary" class="col-md-4 col-md-form-label">Your salary</label>
+              <div class="col-md-4">
+                <input type="input" class="form-control" id="salary" value="50000">
+              </div>
+              <div class="col-md-4">
+                <select class="form-control">
+                <option>Annually</option>
+                <option>Monthly</option>
+                <option>Fortnightly</option>
+                <option>Weekly</option>
+                <option>Day Rate</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="taxyear" class="col-md-4">Tax Year</label>
+              <div class="col-md-4">
+                <select class="form-control">
+                  <option>2016-2017</option>
+                  <option>2015-2016</option>
+                  <option>2014-2015</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="superannuation" class="col-md-4">Superannuation %</label>
+              <div class="col-md-4">
+                <input type="input" class="form-control" id="superannuation" value="9.5">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-md-offset-1">                   
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Include Superannuation
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Non-Resident
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> No tax-free threshold
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> HELP and TSL
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Withhold Tax Offsets
+              </label>
+            </div>
+          </div>
+          </div>
+        </form>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+
+
+    <div class="table-responsive">
+      <table class="table table-sm table-striped table-bordered">
+        <thead class="thead-default">
+          <tr>
+            <th>Year 2016-2017</th>
+            <th>Weekly</th>
+            <th>Fortnightly</th>
+            <th>Monthly</th>
+            <th>Yearly</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-success">
+            <td>Pay</td>
+            <td>$100</td>
+            <td>$1000</td>
+            <td>$10000</td>
+            <td>$10000</td>
+          </tr>
+          <tr>
+            <td>Taxable Income</td>
+            <td>$</td>
+            <td>$</td>
+            <td>$</td>
+            <td>$</td>
+          </tr>
+          <tr>
+            <td>Superannuation</td>
+            <td>$</td>
+            <td>$</td>
+            <td>$</td>
+            <td>$</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
