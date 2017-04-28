@@ -212,3 +212,4 @@ _Pvt_Extensions/
 ModelManifest.xml
 /paycalc/bower_components/
 _test-output/
+dist/
